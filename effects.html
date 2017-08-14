@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+    .blue {
+	  background: blue
+	}
+  </style>
+  </head>
+  <body>
+  <img src="https://www.freecodecamp.com/design-style-guide/downloads/freeCodeCamp.jpg" width="400px">
+  <p></p>
+  <h1 class="title">Learn to code</h1>
+  <p>Community that helps to learn to code and to get experience by contributing
+     to open source projects used by non profits.</p>
+  <script>
+    $("h1").hide();
+	$("h1").fadeIn(2000, function(){
+	 $(this).addClass("blue")
+	})
+	
+	$("img").on("click", function() {
+	 $("h1").stop();
+	})
+    
+	$("p").hide(500).delay(1000).show(500)
+  </script>
+  </body>
+</html>  
