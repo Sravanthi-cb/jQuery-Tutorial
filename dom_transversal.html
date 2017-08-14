@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <style>
+    .container * {
+	   display: block;
+	   border: 2px solid DarkSeaGreen;
+	   color: DarkSeaGreen;
+	   padding: 5px;
+	   margin: 15px;
+	   background: PapayaWhip;
+	
+	}
+	body {
+	  background: PeachPuff;
+	}
+  </style>
+  <body>
+  <div class="container">
+  jQuery: Transvering the DOM
+  <div>div
+    <ul>ul
+	<li>li
+	  <span class="parent">span
+	   <p>p</p>
+	   <span class="child">span</span>
+	   <h2>h2</h2>
+	   <h3>h3</h3>
+	   <p>p</p>
+	   </span>
+    </li>
+	</ul>
+	</div>
+  </div>
+  
+  <script>
+    // jQuery: Transvering the DOM //
+	$("span.child").prev().css({"color": "chocolate", "border": "2px solid chocolate"});
+  
+  </script>
+  </body>
+</html>
