@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>Just normal one-sentence paragraph.</p>
+	<input></input>
+  <script>
+	$(function(){
+
+	   $("p").one({
+	    "click": function() { console.log("clicked!"); },
+		"mouseover": function() { console.log("hovered!"); }
+	   });	
+       
+	   $("p").off("click");
+	   
+	   $("input").change(function(){
+	     console.log("You did something!");
+	   });
+	});
+	// dbclick, mouseenter, mouseleave, mousedown, mouseup, hover
+	// form events: focus, blur, change
+  </script>
+  </body>
+</html>
+
+
+
+
+
+
