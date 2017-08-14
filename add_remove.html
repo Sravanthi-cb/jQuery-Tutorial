@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <style>
+    body {
+	  padding: 5px;
+	  background:  #F3F6FA;
+	  font-size: 1.2em;
+	}
+	
+	.target {
+	  border: 2px solid #bbb;
+	  background-color: LightSkyBlue;
+	  padding :10px
+      margin: 10px 0;  
+	}
+	.child {
+	 display: block;
+	 width: 90px;
+	 color: white;
+	 font: bold 12px;
+	 padding: 5px 10px;
+	 background-color: orange;
+	}
+	
+	.sibling {
+	 display: block;
+	 width: 90px;
+	 color: white;
+	 font: bold 12px;
+	 padding: 5px 10px;
+	 background-color: SlateGray;
+	}
+	
+  </style>
+  <body>
+  <h2>Jquery: Adding and Removing Elements</h2>
+  <div class="target">
+  <p class="filter">This div is a target for all sorts of things.</p>
+  <p>It doesnt even know what could happen to it.</p>
+  </div>
+  
+  <script>
+    $('.target')
+	.append('<div class="child">Append</div>', '<p>Hello!</p>')
+	.prepend('<div class="child">Prepend</div>')
+    .before('<div class="sibling">Before</div>')
+	.after('<div class="sibling">After</div>')
+	
+	$('p').append('<b>LOTS</b>')
+	$('p').remove('.filter')
+				
+  
+  </script>
+  </body>
+  </html>
