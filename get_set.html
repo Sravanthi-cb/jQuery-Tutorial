@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+   <p id="test">Learn to code with <a href="https://freecodecamp.org" id="fcc">freeCodeCamp</a>!<p>
+   
+   <p>Name: <input type="text" id="name" value="Hello, World!"></p>
+   <button id="btn">Show Content</button>
+   <button id="btn2">Set Content</button>
+   <button id="btn3">Set Value</button>
+   
+   <script>
+     $("#btn").click(function() {
+	   console.log($("#fcc").attr("href"))
+	 })
+	  $("#btn2").click(function() {
+	   $("#test").text(function(i, origText){
+	     return "Old text: " + origText + " New text: freeCodeCamp is awesome! (index: " + i + ")"
+	   })
+	  })
+     $("#btn3").click(function() {
+	   $("#name").val("Welcome")
+	  });
+   </script>
+  </body>
+ </html> 
